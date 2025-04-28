@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Website Focus Lock</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Website Focus Lock</h1>
+      <div id="status-area">
+        <div id="current-site"></div>
+        <div id="lock-status">Checking status...</div>
+      </div>
+
+      <div id="unlock-timer-control" class="hidden">
+        <div id="timer-display"></div>
+        <button id="start-unlock" class="btn">Start Unlock Timer</button>
+      </div>
+
+      <div id="lock-control">
+        <button id="lock-site" class="btn btn-primary">Lock This Website</button>
+      </div>
+
+      <div id="settings">
+        <h2>Settings</h2>
+        <div class="setting-row">
+          <label for="unlock-duration">Unlock Timer (minutes):</label>
+          <input type="number" id="unlock-duration" min="1" max="60" value="5" />
+        </div>
+        <button id="save-settings" class="btn">Save Settings</button>
+      </div>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html> 
