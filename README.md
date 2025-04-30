@@ -19,6 +19,8 @@ Whether you're an engineer deep in a complex problem, a student tackling coursew
 Traditional blockers often penalize efficiency. If you set a 30-minute block and finish your task in 15, you're left with 15 minutes of enforced idleness before you can access the blocked site again. Website Focus Lock addresses this by providing a short, customizable cool-down timer. This encourages focused sprints while allowing for a quick and controlled return to the unlocked state when your work is done.
 
 ## Installation
+You can install Website Focus Lock from the Chrome Web Store at this link:
+( Pending Review )
 
 To install Website Focus Lock from this repository:
 
