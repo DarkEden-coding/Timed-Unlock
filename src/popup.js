@@ -103,6 +103,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       if (status.unlockTimerActive) {
         startUnlockBtn.disabled = true;
+        timerDisplayElem.classList.remove("hidden");
         updateTimerDisplay(status.remainingTime);
 
         // Set interval to update timer
@@ -112,12 +113,13 @@ document.addEventListener("DOMContentLoaded", function () {
         }, 1000);
       } else {
         startUnlockBtn.disabled = false;
-        timerDisplayElem.textContent = "";
+        timerDisplayElem.classList.add("hidden");
       }
     } else {
       lockStatusElem.textContent = "Status: Unlocked";
       lockControl.classList.remove("hidden");
       unlockTimerControl.classList.add("hidden");
+      timerDisplayElem.classList.add("hidden");
       if (timerInterval) {
         clearInterval(timerInterval);
         timerInterval = null;
@@ -133,7 +135,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Update timer display
   function updateTimerDisplay(remainingTime) {
     if (remainingTime <= 0) {
-      timerDisplayElem.textContent = "Unlocking complete!";
+      timerDisplayElem.classList.add("hidden");
       return;
     }
 

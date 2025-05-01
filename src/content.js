@@ -11,7 +11,16 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
   } else if (request.action === "removeLock") {
     removeLockScreen();
   } else if (request.action === "updateTimer") {
-    updateTimer(request.remainingTime);
+    if (!lockOverlay) {
+      showLockScreen(request.remainingTime);
+    } else {
+      updateTimer(request.remainingTime);
+      const unlockButton = lockOverlay.querySelector(".focus-lock-button");
+      if (unlockButton) {
+        unlockButton.disabled = true;
+        unlockButton.textContent = "Unlocking...";
+      }
+    }
   } else if (request.action === "prepareLock") {
     // Stop all videos and respond that we're ready for reload
     stopAllMediaPlayback();

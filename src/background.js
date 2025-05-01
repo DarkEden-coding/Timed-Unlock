@@ -93,6 +93,9 @@ function startUnlockTimer(domain) {
     unlockTimers: unlockTimers,
   });
 
+  // Immediately notify all tabs about timer start
+  notifyAllTabs(domain, "updateTimer", { remainingTime: duration });
+
   // Update all tabs with unlock progress
   const updateInterval = setInterval(() => {
     const remaining = getRemainingTime(domain);
@@ -141,10 +144,7 @@ function notifyAllTabs(domain, action, data = {}) {
       try {
         const tabDomain = new URL(tab.url).hostname;
         if (tabDomain === domain) {
-          chrome.tabs.sendMessage(tab.id, {
-            action: action,
-            ...data,
-          });
+          chrome.tabs.sendMessage(tab.id, { action, ...data });
         }
       } catch (e) {
         // Skip invalid URLs

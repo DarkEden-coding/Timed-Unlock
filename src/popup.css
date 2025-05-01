@@ -4,7 +4,7 @@ body {
   padding: 16px;
   margin: 0;
   color: #e1e1e1;
-  background-color: hsla(210, 29%, 29%, 0.95);
+  background-color: hsla(210, 28%, 29%, 0.95);
 }
 
 .container {
@@ -29,10 +29,11 @@ h2 {
 }
 
 #status-area {
-  background-color: hsla(210, 29%, 29%, 0.95);
+  background-color: hsla(210, 29%, 24%, 0.95);
   padding: 16px;
   border-radius: 12px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 8px;
 }
 
 #current-site {
@@ -40,10 +41,12 @@ h2 {
   margin-bottom: 8px;
   word-break: break-all;
   color: #ffffff;
+  font-size: 14px;
 }
 
 #lock-status {
   color: #b0b0b0;
+  font-size: 14px;
 }
 
 .btn {
@@ -105,9 +108,9 @@ h2 {
 input[type="number"] {
   width: 70px;
   padding: 8px 12px;
-  border: 1px solid #3a3a3a;
+  border: 1px solid hsla(210, 28%, 29%, 0.52);
   border-radius: 8px;
-  background-color: hsla(210, 29%, 29%, 0.95);
+  background-color: #3f5367;
   color: #e1e1e1;
   font-size: 14px;
 }
