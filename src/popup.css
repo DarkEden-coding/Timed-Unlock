@@ -47,38 +47,39 @@ h2 {
 }
 
 .btn {
-  background-color: #2a2a2a;
+  background-color: #3498db;
   border: none;
-  padding: 10px 18px;
-  border-radius: 8px;
+  padding: 12px 24px;
+  border-radius: 6px;
   cursor: pointer;
-  font-size: 14px;
-  transition: all 0.2s ease;
-  color: #e1e1e1;
+  font-size: 16px;
+  transition: background-color 0.2s;
+  color: white;
   font-weight: 500;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .btn:hover {
-  background-color: #3a3a3a;
-  transform: translateY(-1px);
+  background-color: #2980b9;
+  transform: none;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .btn:disabled {
-  opacity: 0.5;
+  background-color: #95a5a6;
+  opacity: 1;
   cursor: not-allowed;
   transform: none;
   box-shadow: none;
 }
 
 .btn-primary {
-  background-color: #2563eb;
+  background-color: #3498db;
   color: white;
 }
 
 .btn-primary:hover {
-  background-color: #1d4ed8;
+  background-color: #2980b9;
 }
 
 #timer-display {
