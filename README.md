@@ -24,6 +24,8 @@ You can install Website Focus Lock from the Chrome Web Store at this link:
 
 To install Website Focus Lock from this repository:
 
+https://github.com/DarkEden-coding/Timed-Unlock/blob/main/src.crx
+
 1.  Download the repository as a ZIP file or clone it:
     ```bash
     git clone https://github.com/your-username/website-focus-lock.git
