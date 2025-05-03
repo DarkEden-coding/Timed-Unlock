@@ -87,15 +87,7 @@ The extension requires the following permissions:
    - Purpose: Monitor and manage locked websites
    - Scope: Access to tab URLs and states
 
-3. **ActiveTab Permission**
-   - Purpose: Interact with current website
-   - Scope: Limited to active tab only
-
-4. **Scripting Permission**
-   - Purpose: Implement lock screen and control media
-   - Scope: Content modification on locked sites
-
-5. **Host Permission**
+3. **Host Permission**
    - Purpose: Function on any website you choose to lock
    - Scope: Access to modify webpage content
 
